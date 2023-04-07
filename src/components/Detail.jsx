@@ -16,7 +16,7 @@ const Detail = ()=>{
         });
         return setCharacter({});
     }, [id]);
-    return(
+    return(s
         <div>
             {Character.name ?
             (<>

@@ -6,6 +6,9 @@ import axios from "axios";
 import About from './components/About'
 import Detail from './components/Detail';
 import { Route, Routes} from 'react-router-dom';
+const URL="https://be-a-rym.up.railway.app/api/character";
+const apiKey="ff65bd57beea.16694971664382fb33e7";
+//URL de swagger henry https://be-a-rym.up.railway.app/api/docs/#/character/getCharacters
 function App() {
    let [characters,setCharacters] = useState([]);
    function onSearch(id) {
