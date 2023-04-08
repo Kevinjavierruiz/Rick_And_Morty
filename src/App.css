@@ -1,3 +1,10 @@
 .App {
    text-align: center;
 }
+
+.error{
+   color:red;
+}
+.warning{
+   border: 1px solid red;
+}
