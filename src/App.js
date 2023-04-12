@@ -8,6 +8,7 @@ import Detail from './components/Detail';
 import { useNavigate,Route, Routes,useLocation} from 'react-router-dom';
 import Form from './components/Form';
 import { useEffect } from 'react';
+import Favorite from './components/Favorites';
 const URL="https://be-a-rym.up.railway.app/api/character";
 const apiKey="ff65bd57beea.16694971664382fb33e7";
 const EMAIL = "ruizdiazkevinjavier270@gmail.com";
@@ -52,6 +53,7 @@ function App() {
             <Route path="/about" element={<About/>}/>
             <Route path="/detail/:id" element={<Detail/>}/>
             <Route path='/' element={<Form login={login} />}></Route>
+            <Route path='/favorites' element={<Favorite/>}/>
          </Routes>
       </div>
    );
