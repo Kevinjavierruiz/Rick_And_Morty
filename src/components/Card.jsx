@@ -11,7 +11,7 @@ function Card({id,name,status,species,gender,origin,image,onClose,addFav,removeF
       }
       else{
          setIsFav(true);
-         addFav({id,name,status,species,gender,origin,image})
+         addFav({id,name,status,species,gender,origin,image,onClose})
       }
    }
    useEffect(() => {
@@ -31,10 +31,13 @@ function Card({id,name,status,species,gender,origin,image,onClose,addFav,removeF
          )
          }
          
-         <button onClick={()=> onClose(id)}>X</button>
+         <button onClick={()=> {
+            onClose(id);
+            removeFav(id);}}>X</button>
          <Link to={`/detail/${id}`}>
             <h2>{name}</h2>
          </Link>
+         <h2>{id}</h2>
          <h2>{status}</h2>
          <h2>{species}</h2>
          <h2>{gender}</h2>
