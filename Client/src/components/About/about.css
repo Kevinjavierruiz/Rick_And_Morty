@@ -1,0 +1,25 @@
+.container-all{
+    margin: 40px;
+    width: 400px;
+    background:linear-gradient(90deg,rgba(10, 10, 10, 0.589),rgba(255, 6, 6, 0.619));
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 1px 1px 10px white;
+}
+.container-about{
+    display: flex;
+    justify-content: center;
+}
+.container-about-cv{
+    
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.container-perfil{
+    width: 300px;
+    order:1;
+}
+.container-skills{
+    width: 300px;
+       
+}

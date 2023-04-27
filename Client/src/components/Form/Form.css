@@ -1,0 +1,41 @@
+.container-form{
+    /* degrade de colores */
+    background: linear-gradient(360deg,rgba(0, 0, 0, 0.326),rgba(224, 224, 224, 0.699));
+    height: 500px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-form-input{
+    width: 400px;
+    height: 380px;
+    background-color: rgba(255, 249, 249, 0.104);
+    
+}
+.errors{
+    color:rgb(116, 1, 1);
+}
+.container-container-form{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email{
+    margin: 10px 0px 10px 10px;
+}
+.password{
+    margin:10px
+}
+.recordarCuenta{
+    margin:10px;
+}
+.crearCuenta{
+    margin:10px;
+}
+#password,
+#email{
+    box-shadow: 3px 3px 15px rgba(125, 4, 4, 0.791);
+}
